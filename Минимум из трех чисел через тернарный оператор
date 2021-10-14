@@ -1,0 +1,16 @@
+using System;
+namespace studyProject
+{
+	class programm
+	{
+		static void Main(string[] args)
+		{
+			double a = Convert.ToDouble(Console.ReadLine());
+			double b = Convert.ToDouble(Console.ReadLine());
+			double c = Convert.ToDouble(Console.ReadLine());
+			//coast = coast > 500 && coast <= 1000 ? coast * 0.97f : coast > 1000 ? coast * 0.95f : coast;
+			double min = a < b && a < c ? a : b < a && b < c ? b : c;
+			Console.WriteLine(min);
+		}
+	}
+}
